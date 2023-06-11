@@ -8,7 +8,7 @@
 <body>
 	<!-- criando tabela -->
 	<h2>Produtos</h2>
-	<table border="1">
+	<table border="2" width="100%">
 		<tr>
 			<th>Código</th>
 			<th>Produto</th>
@@ -23,6 +23,19 @@
 			<td>002</td>
 			<td>Tablet</td>
 			<td>R$ 999,99</td>
+		</tr>
+		<tr>
+			<!-- rowspan serve para mesclar linhas -->
+			<td rowspan="2">Desconto</td>
+			<td colspan="2">Cupom1 -R$ 10,00</td>
+			<!-- colspan serve para mesclar colunas -->
+		</tr>
+		<tr>
+			<td colspan="2">cupom2 - R$ 12,00</td>
+		</tr>
+		<tr>
+			<td>Total:</td>
+			<td colspan="2">R$ 3.478,98</td>
 		</tr>
 	</table>
 </body>
