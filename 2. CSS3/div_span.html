@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Div e Span</title>
+	<style type="text/css">
+		#topo{
+			background: blue;
+		}
+		#conteudo{
+			background: red;
+		}
+		.produto{
+			background: gray;
+			margin: 10px;
+		}
+		#rodape{
+			background: green;
+		}
+		#assinatura{
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<!-- div é um elmento do html do block,
+		isso quer dizer que ele vai agrupar
+		os conteúdos um abaixo do outro. -->
+	<div id="topo">
+		<img src="https://m.media-amazon.com/images/G/32/social_share/amazon_logo._CB633267191_.png" width="200">
+		<ul>
+			<li>Home</li>
+			<li>Produtos</li>
+			<li>Contato</li>
+		</ul>
+	</div>
+	<div id="conteudo">
+		<div class="produto">
+			Produto1
+		</div>
+		<div class="produto">
+			Produto1
+		</div>
+		<div class="produto">
+			Produto1
+		</div>
+	</div>
+	<div id="rodape">
+		Todos os direitos reservados
+	</div>
+	<!-- span é um elemento do html do tipo inline,
+		isso quer dizer que ele vai agrupar os
+		conteúdos um do lado do outro. -->
+	<!-- span deve ser utilizado quando se quer fazer
+		uma formatação específica em um texto, por exemplo. -->
+	<span id="assinatura">
+		Jardison
+	</span>
+	<span id="assinatura">
+		Santos
+	</span>
+</body>
+</html>
