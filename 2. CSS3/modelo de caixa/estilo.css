@@ -1,0 +1,13 @@
+.conteudo{
+	border: 1px solid red;
+	/*padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;*/
+	/* aplica margem no sentido horário padding: 20px 15px 10px 5px;*/
+	/* aplica margem na esquerda, direita, em cima e embaixo, 20px em cima e embaixo e 50px esquerda e direita padding: 20px 50px;*/
+	padding: 20px;
+	/*margim utiliza a mesma lógica do padding, porém, para o espaçamento externo.*/
+	margin: 20px;
+	width: 150px;
+}
