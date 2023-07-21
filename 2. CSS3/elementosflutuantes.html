@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Elementos Flutuantes</title>
+	<style type="text/css">
+		.conteudo{
+			background: blue;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+			margin: 10px;
+			float: left;
+		}
+		/*.conteudo-zero{
+			background: red;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+		}*/
+		/*.conteudo1{
+			background: red;
+			border: 1px solid gray;
+			width: 150px;
+			height: 150px;
+			float: right;
+		}*/
+		.clear{
+			/*left, right, none, both
+			Isso pode ser utilizado, tamém em divs. Ele serve para jogar o elemento não flutuante para baixo do elemento flutuante. Ele limpa o fluxo flutuante.
+			*/
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="conteudo-zero">Conteúdo 0</div> -->
+	<div class="conteudo">Conteúdo 1</div>
+	<div class="conteudo">Conteúdo 2</div>
+	<div class="conteudo">Conteúdo 3</div>
+	<p class="clear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor eu dolor eu congue. Praesent posuere, lectus nec maximus ultricies, orci ex aliquam urna, ac accumsan risus ante at leo. Mauris vitae sodales tellus, aliquam gravida libero. Integer sit amet erat et nulla pretium tincidunt in non nunc. Quisque sed tortor massa. Pellentesque porta vehicula ex nec sodales. Vivamus dictum, enim at bibendum imperdiet, arcu enim scelerisque mauris, ut commodo elit quam sit amet leo. Vivamus tempus urna in ipsum convallis maximus. Nulla ullamcorper sed orci eget venenatis. Etiam sollicitudin, nisi ac venenatis bibendum, diam arcu dignissim dui, a tempor erat ex commodo est.</p>
+</body>
+</html>
