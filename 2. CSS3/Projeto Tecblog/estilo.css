@@ -17,6 +17,29 @@ body{
 #logo, #menu{
 	padding: 10px;
 }
+#principal{
+	width: 920px;
+	margin: 0 auto;
+}
+#postagens{
+	width: 660px;
+	float: left;
+}
+.post{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;
+}
+#menu-lateral{
+	width: 240px;
+	float: right;
+}
+#rodape{
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: #ccc;
+}
 /*formatação do menu*/
 a{
 	text-decoration: none;
