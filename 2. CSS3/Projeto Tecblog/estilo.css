@@ -20,6 +20,7 @@ body{
 #principal{
 	width: 920px;
 	margin: 0 auto;
+	padding: 15px;
 }
 #postagens{
 	width: 660px;
@@ -29,6 +30,11 @@ body{
 	padding: 20px;
 	margin-bottom: 20px;
 	background: white;
+}
+.conteudo-lateral{
+	background: white;
+	padding: 10px;
+	margin-bottom: 20px;
 }
 #menu-lateral{
 	width: 240px;
@@ -40,17 +46,30 @@ body{
 	padding: 15px;
 	background: #ccc;
 }
+.postagem-lateral{
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #ccc;
+}
 /*formatação do menu*/
 a{
 	text-decoration: none;
 }
-a:link, a:visited{
+/*o uso de seletores, como o id usado abaixo serve para formações especificas*/
+#cabecalho a:link, #cabecalho a:visited{
 	color: #fff;
 	padding: 8px 12px;
 }
-a:hover{
+#cabecalho a:hover{
 	color: #f7b600;
 	background: white;
+	text-decoration: none;
+}
+a:link, a:visited{
+	color: #f7b600;
+}
+a:hover{
+	text-decoration: underline;
 }
 /*formatação geral*/
 h1{
@@ -59,4 +78,19 @@ h1{
 }
 .branco{
 	color: white;
+}
+h2{
+	color: #f7b600;
+}
+h3{
+	color: #565656;
+	background: #CCC;
+	padding: 5px;
+}
+.datapost{
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
 }
