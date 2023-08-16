@@ -17,12 +17,18 @@ ul a{
 	height: 40px;
 	display: block;
 	text-decoration: none;
-	background: url(imagens/menu.png) no-repeat left bottom;
+	background: /*a cor é tulizado caso a imagem de fundo não carregue*/#f7b600 url(imagens/menu.png) no-repeat left bottom;
 	color: #000;
 	text-indent: 40px;
 	line-height: 40px;
 }
-a:hover{
+a:hover, .selecionado a{
 	background-position: right bottom;
+	background-color: #f99200;/*também age da mesma forma que o exemplo acima da imagem*/
+	color: #fff;
+}
+#home #navegacao .home a, #contato #navegacao .contato a, #noticia #navegacao .noticia a, #servico #navegacao .servico a, #sobre #navegacao .sobre a{
+	background-position: right bottom;
+	background-color: #f99200;/*também age da mesma forma que o exemplo acima da imagem*/
 	color: #fff;
 }
