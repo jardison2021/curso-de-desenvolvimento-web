@@ -3,9 +3,10 @@ body{
 	background: #f2f2f2;
 }
 #container{
-	width: 720px;
+	width: 85%;/*porcetagem serve para deixar o layout líquido*/
 	margin: 0 auto;
 	background: #fff;
+	min-width: 720px;/*é possível definir altura mínima, altura máxima, largura mínima e largura máxima*/
 }
 #marca{
 	height: 100px;
@@ -14,15 +15,15 @@ body{
 	line-height: 100px;
 }
 #conteudo{
-	width: 520px;
+	width: 75%;
 	float: right;
 }
 #conteudo-principal{
-	width: 320px;
+	width: 64%;
 	float: left;
 }
 #conteudo-secundario{
-	width: 180px;
+	width: 35%;
 	float: right;
 	background: #d1d1d1;
 }
@@ -31,7 +32,7 @@ body{
 	padding-right: 20px;
 }
 #navegacao{
-	width: 180px;
+	width: 23%;
 	float: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
