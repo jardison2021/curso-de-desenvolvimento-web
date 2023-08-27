@@ -3,9 +3,9 @@ body{
 	background: #f2f2f2;
 }
 #container{
-	width: 85%;/*porcetagem serve para deixar o layout líquido*/
+	width: 960px;/*85%; porcetagem serve para deixar o layout líquido*/
 	margin: 0 auto;
-	background: #fff;
+	background: #fff url(imagens/coluna.png) repeat-y left top;
 	min-width: 820px;/*é possível definir altura mínima, altura máxima, largura mínima e largura máxima*/
 }
 #marca{
@@ -48,7 +48,7 @@ img.img-noticia{
 	float: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background: #d1d1d1;
+	/*background: #d1d1d1;*/
 }
 #navegacao ul{
 	list-style: none;
