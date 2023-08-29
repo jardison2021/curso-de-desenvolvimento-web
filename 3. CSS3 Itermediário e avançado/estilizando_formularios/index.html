@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Estilizando Formulários</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<h2>Estilizando Formulários</h2>
+	<form>
+		<fieldset><!-- Fieldset serve para agrupar dados semelhantes -->
+			<legend>Detalhes de contato</legend>
+			<div>
+				<label for="nome">Nome:</label><input type="text" name="nome" id="nome"><!-- Essa é uma das formas de se criar um label, mas você pode também pode colocar um input dentro da tag label, nesse casso não há a necessidade de usar o atributo for, pois assim o input já vai estar ligado ao label -->
+			</div>
+			<div>
+				<label for="email">E-mail:</label><input type="text" name="email" id="email">
+			</div>
+			<div>
+				<label for="url">URL:</label><input type="text" name="url" id="url">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Comentários</legend>
+			<div>
+				<label for="mensagem">Mensagem:</label><textarea name="mensagem" id="mensagem"></textarea>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Lembrar de mim</legend>
+			<div>
+				<label><input type="radio" name="lembrar" id="sim">Sim</label>
+			</div>
+			<div>
+				<label><input type="radio" name="lembrar" id="nao">Não</label>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
