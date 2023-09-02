@@ -55,3 +55,33 @@ body.home #navegacao a#home, body.brasil #navegacao a#brasil, body.internacional
 	background: #de003e;
 	cursor: text;
 }
+/* Configuração do layout de três colunas */
+#conteudo{
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+#primario{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+#secundario{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+#lateral{
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+/* Rodapé */
+#container-rodape{
+	background: #294c71;
+	padding: 20px;
+}
+#rodape{
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+}
