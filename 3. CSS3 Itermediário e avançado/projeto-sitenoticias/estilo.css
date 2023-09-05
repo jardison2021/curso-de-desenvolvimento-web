@@ -132,6 +132,25 @@ input.submit{
 	background-color: #b10333;
 	border: 2px solid #870529;
 }
+/* Formatação de imagens */
+img.imagem-principal{
+	border: 3px solid #dfdfdf;
+	width: 100%;
+}
+/* Formatação de cabeçalhos */
+h3{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+.destaque h3{
+	background: #b10333;
+	color: #fff;
+}
+.entrevista h3{
+	background: #de003e;
+}
 /* Rodapé */
 #container-rodape{
 	background: #294c71;
