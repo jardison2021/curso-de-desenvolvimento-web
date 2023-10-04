@@ -1,0 +1,13 @@
+#caixa{
+	width: 300px;
+	height: 500px;
+	background: #b9c941;
+	padding: 50px;
+	/* Serve para ajustar uma div so seu tamanho real, independete dela conter padding ou margin */
+	box-sizing: border-box;
+	/*suporte para navegadores não atualizados pré-fixo*
+	-webkit-border-radius: 20px 90px;
+	-moz-border-radius: 20px 90px;
+	border-radius: 20px 90px;
+	margin: 10px;*/
+}
