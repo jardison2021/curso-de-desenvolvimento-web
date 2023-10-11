@@ -20,12 +20,16 @@
 		}
 		.item{
 			background: white;
-			width: 100px;
+			/*width: 200px;*/
 			height: 100px;
 			border: 1px solid gray;
 			margin: 10px;
 			/* Define a proporção de espaço ocupado por um item */
 			flex-grow: 1;
+			/* Define a capacidade de redução de tamanho do item */
+			flex-shrink: 1;
+			/* Define o tamanho inicial do flex item antes da distribuição do espaço restante */
+			flex-basis: 100px;
 		}
 		/*.ordem1{
 			order:1;
@@ -44,9 +48,15 @@
 		}*/
 		.item1{
 			/*flex-grow: 1;*/
+			/*flex-shrink: 1;*/
 		}
 		.item2{
+			flex-grow: 1;
+			/*flex-shrink: 2;*/
+		}
+		.item3{
 			flex-grow: 2;
+			/*flex-shrink: 5;*/
 		}
 	</style>
 </head>
@@ -55,7 +65,7 @@
 	<div id="contuedo">
 		<div class="item item1">01</div>
 		<div class="item item2">02</div>
-		<div class="item">03</div>
+		<div class="item item3">03</div>
 		<div class="item">04</div>
 	</div>
 </body>
