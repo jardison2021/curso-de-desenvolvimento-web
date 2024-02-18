@@ -31,11 +31,15 @@
 		var faltas = prompt('Quantidade de faltas')
 		var media = 7
 		var falta_maximas = 15
-		if(nota >= media && faltas <= falta_maximas){
+		/*if(nota >= media && faltas <= falta_maximas){
 			document.write('Nota: ' +nota+ ', aluno aprovado <br> Número da faltas: ' +faltas)
 		}else{
 			document.write('Nota: ' +nota+ ', aluno reprovado <br> Número da faltas: ' +faltas)
-		}
+		}*/
+
+		//Operador ternário
+		var resultado = (nota >= media && faltas <= falta_maximas) ? 'aprovado' : 'reprovado'
+		document.write(resultado)
 	</script>
 </head>
 <body>
