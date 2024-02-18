@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operadores Lógicos</title>
+	<script type="text/javascript">
+		/*//O operador lógico &&(E) só será verdadeiro se todos os elementos da expresão forem verdadeiros
+		//true && true && false = false
+		if(2 == 2 && 3 >= 1 && 'a' == 'b'){
+			document.write('Verdadeiro')
+		}else{
+			document.write('Falso')
+		}
+		//O operador lógico ||(OU) para ser verdadeiro precisa apenas que um dos elementos da expresão seja verdadeiro, portanto, para que toda a expresão seja falsa, todos os seus elementos devem ser falsos.
+		//true || false = true
+		if(2 == 2 || 3 >= 1 || 'a' == 'b'){
+			document.write('Verdadeiro')
+		}else{
+			document.write('Falso')
+		}
+		//O operador lógico !(Negação) tem a função de inversão, se um elemento da expresão verdadiro, ele é invertido para falso, por exemplo.
+		//!true = false
+		if(!(5 >= 2)){
+			document.write('Verdadeiro')
+		}else{
+			document.write('Falso')
+		}*/
+
+		var nota = prompt('Nota do Aluno: ')
+		var faltas = prompt('Quantidade de faltas')
+		var media = 7
+		var falta_maximas = 15
+		if(nota >= media && faltas <= falta_maximas){
+			document.write('Nota: ' +nota+ ', aluno aprovado <br> Número da faltas: ' +faltas)
+		}else{
+			document.write('Nota: ' +nota+ ', aluno reprovado <br> Número da faltas: ' +faltas)
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
