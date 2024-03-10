@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Escopo de Variável</title>
+	<script>
+		//tipos de escopo no javascript
+		//global
+		//função
+		//bloco
+
+		var serie = 'Friends'
+		//escopo de bloco
+		if(true){
+			var serie2 = 'Game of Thrones'
+			document.write(serie)
+		}
+		document.write(serie2)
+		document.write('<br>')
+		//escopo de função
+		function x(){
+			var serie3 = 'The Walkin Dead'
+			document.write(serie)
+		}
+		x()
+		document.write('<br>')
+		document.write(serie3)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
