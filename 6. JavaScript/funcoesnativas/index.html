@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Funções nativas para manipular strings</title>
+	<script type="text/javascript">
+		var nome = 'Jardison Santos'
+		// propriedade length - retorna a quantidade de caracteres
+		document.write('Jardison Santos'.length)
+		document.write('<br>')
+		// propriedade charAt() - retorna a posição do caractere
+		document.write('Jardison Santos'.charAt(9))
+		document.write('<br>')
+		// propriedade indexOf - retorna o caractere na sua primeira ocorrência
+		document.write(nome.indexOf('s'))
+		document.write('<br>')
+		// propriedade replace - substitui uma ocorrência
+		document.write(nome.replace('Santos', 'Rebouças'))
+		document.write('<br>')
+		// propriedade substr - pega uma posição inicial e depois adiciona os caracteres de acordo com os parâmentros passados
+		document.write(nome.substr(9, 6))
+		document.write('<br>')
+		//tolowercase - deixa tudo em caixa baixa
+		document.write(nome.toLowerCase())
+		document.write('<br>')
+		//touppercase - deixa tudo em caixa alta
+		document.write(nome.toUpperCase())
+		document.write('<br>')
+		// trim - remove espaços da extremidades do caratere
+		document.write('-' + nome.trim() + '-')
+	</script>
+</head>
+<body>
+
+</body>
+</html>
