@@ -7,7 +7,56 @@
 	<script type="text/javascript">
 		var data = new Date()
 
-		document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+		//document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear())
+
+		//adicionar / remover dias
+		document.write('<p> Adicionar / Remover Dias </p>')
+		document.write(data.toString())
+		data.setDate(data.getDate() + 1)
+		document.write('<hr/>')
+		document.write(data.toString())
+		document.write('<br/>')
+		document.write('<hr/>')
+		//adicionar / remover meses
+		document.write('<p> Adicionar / Remover Meses </p>')
+		document.write(data.toString())
+		data.setMonth(data.getMonth() + 1)
+		document.write('<hr/>')
+		document.write(data.toString())
+		document.write('<br/>')
+		document.write('<hr/>')
+		//adicionar / remover anos
+		document.write('<p> Adicionar / Remover Anos </p>')
+		document.write(data.toString())
+		data.setFullYear(data.getFullYear() + 1)
+		document.write('<hr/>')
+		document.write(data.toString())
+		
+		// 15/01/2024
+		var data1 = new Date(2024, 0, 15)
+		// 23/02/2024
+		var data2 = new Date(2024, 1, 23)
+		document.write('<p> Cálculo entre datas</p>')
+		document.write(data1.toString())
+		document.write('<hr/>')
+		document.write(data2.toString())
+		document.write('<hr/>')
+		//conververter data para algo que possa ser calculado
+		document.write(data1.getTime())
+		document.write('<hr/>')
+		document.write(data2.getTime())
+		document.write('<hr/>')
+		// O método getTime pega a quantidade de milisegundos a partir da data de 01 de janeiro de 1978 até o presente.
+		// Encontrar a quantide de milissegundos entre data1 e data2
+		var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+		document.write(milissegundos_entre_datas)
+		document.write('<hr/>')
+		//Após descobrir a quantidade de milisegundos entre uma data e outras, agora, vamos desobrir quantos milissegundos há em um dia.
+		var milissegundos_por_dia = (1*24*60*60*1000)
+		document.write('1 dia tem: ' + milissegundos_por_dia + ' milissegundos.')
+		document.write('<hr/>')
+		// Para descobrir a quantidade de dias entrer uma data e outrar foi pegue a diferença de milossegundos entre a data 1 e a data 2 divido pela quantidede de milissegundos em um dia.
+		document.write('A diferença entre data1 e data2 é ' + Math.ceil(milissegundos_entre_datas / milissegundos_por_dia) + ' dias.')
 	</script>
 </head>
 <body>
