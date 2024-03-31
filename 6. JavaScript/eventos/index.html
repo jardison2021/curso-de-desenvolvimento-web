@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eventos/title>
+	<script type="text/javascript">
+		//Eventos mouse
+		//onclick
+		//ondblclick
+		//onmouseup
+		//onmouseover
+		//onmouseout
+		function acao(){
+			alert('O elemento foi clicado')
+		}
+		function acao2(){
+			alert('O mouse deixou a região do evento')
+		}
+		//Eventos teclado
+		//onkeydown
+		//onkeypress
+		//onkeyup
+		function acaoT1(){
+			alert('Evento disparado')
+		}
+		//Eventos janela
+		//onresize
+		//onscroll
+		//Eventos formulário
+		//onfocus
+		//onblur
+		//onchange
+	</script>
+</head>
+<body onscroll="console.log('Evento disparado')">
+	<!-- Enventos mouse -->
+	<div onclick="acao()" onmouseout="acao2()" style="background: #ccc; height: 150px; width: 150px;"></div>
+	<!-- Enventos teclado -->
+	<input onkeypress="acaoT1()" type="text">
+	<!-- Enventos janela -->
+	<div style="height: 3000px; width: 125px; background: #ccc;"></div>
+	<!-- Enventos formulário -->
+	<input onfucos="console.log('recebeu o foco')" onblur="console.log('perdeu o foco')" type="text">
+	<select onchange="console.log('Estado foi modificado')">
+		<option>selecione</option>
+		<option value="1">Primeira opção</option>
+		<option value="2">Segunda opção</option>
+	</select>
+</body>
+</html>
