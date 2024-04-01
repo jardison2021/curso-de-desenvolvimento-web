@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM -  Document Object Model</title>
+</head>
+<body>
+	<!-- Seleção de documentos -->
+	<input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
+	<script type="text/javascript">
+		//ById
+		console.log(document.getElementById('nome_usuario'))
+		//ByTagName
+		console.log(document.getElementsByTagName('input'))
+		//ByClassName
+		console.log(document.getElementsByClassName('campo_texto'))
+		//ByName
+		console.log(document.getElementsByName('nome'))
+	</script>
+</body>
+</html>
