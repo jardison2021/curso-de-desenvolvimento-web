@@ -6,29 +6,29 @@
 	<title>Manipulando Input</title>
 	<script type="text/javascript">
 		function distribuiCaractere(){
-			//selecionar valor digitado
-			var caractere = document.getElementById('entrada').value
-			//limpar o campo de digitação
-			document.getElementById('entrada').value = ''
-			//limpar espaços em branco nas extremidades da string
-			caractere.trim()
+			// Selecionar valor digitado
+			var caractere = document.getElementById('entrada').value;
+			// Limpar o campo de digitação
+			document.getElementById('entrada').value = '';
+			// Limpar espaços em branco nas extremidades da string
+			caractere = caractere.trim(); // Correção aqui
 			switch(caractere){
-			case '0':
-			case '1':
-			case '2':
-			case '3':
-			case '4':
-			case '5':
-			case '6':
-			case '7':
-			case '8':
-			case '9':
-				//adicionar o caractere no campo referente a números
-				document.getElementById('numeros').value += caractere
-				break;
-				default;
-				//adicionar o cactere no campo referente a letras
-				document.getElementById('letras').value += caractere
+				case '0':
+				case '1':
+				case '2':
+				case '3':
+				case '4':
+				case '5':
+				case '6':
+				case '7':
+				case '8':
+				case '9':
+					// Adicionar o caractere no campo referente a números
+					document.getElementById('numeros').value += caractere;
+					break;
+				default:
+					// Adicionar o caractere no campo referente a letras
+					document.getElementById('letras').value += caractere;
 			}
 		}
 	</script>
