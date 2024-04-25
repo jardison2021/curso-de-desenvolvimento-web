@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>While</title>
+	<script type="text/javascript">
+	 	var x = 1
+
+	 	document.write('Início <br>')
+	 	//executa a instrução até o momento em que ela deixar de ser verdadeira e se torna falsa
+		while(x <= 10){
+			
+
+			/*if(x === 5){
+				break
+			}*/
+			x ++
+			if (x === 5) {
+				//finaliza um passo da instrução e passa para o passo seguinte, e neste casso essa situação gera um loop, então é importante prestar atenção no local o incremento dentro da instrução
+				continue
+			}
+			
+			document.write(x + '<br>')
+			
+		}
+		document.write('Fim <br>')
+	</script>
+</head>
+<body>
+
+</body>
+</html>
