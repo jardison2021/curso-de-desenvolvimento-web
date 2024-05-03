@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tratamento de erros</title>
+	<script type="text/javascript">
+		//O throw pode ser colocado no início do script, mas geralmente é utilizado junto com o cacth
+		//throw new Error('Houve um erro, mas não se preocupe, estamos trabalhando nisso agora!')
+
+		var video = Array()
+
+		video[1] = Array()
+		video[1]['nome'] = 'Death Note'
+		video[1]['categoria'] = 'Anime'
+
+		function getVideo(video){
+			//tramento de erro
+			try{
+				console.log(video[0]['nome'])
+			}catch(e){//O parâmetro "e" é o parâmetro que representa o erro produzido na hora da interpretação do script, não é erro qeu acontece na hora, mas a string que representa o erro sendo capturada e apresentada. Vale ressaltar, que o parâmetro pode ter qualquer nome.
+				//tratarErro(erro)
+				//console.log(e)
+				console.log('Agora sim podemos tratar esse erro')
+				throw new Error('Houve um erro, mas não se preocupe, estamos trabalhando nisso agora!')
+			}finally{
+				console.log('Sempre passa por aqui (try / catch)')
+			}
+			console.log('A aplicação não morreu')
+		}
+		/*function tratarErro(e) {
+			//Lógica para registrar o erro, isso o erro sendo tratado por função
+			console.log(e)
+		}*/
+		getVideo(video)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
