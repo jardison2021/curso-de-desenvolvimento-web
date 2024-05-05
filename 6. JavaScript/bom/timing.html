@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Timing</title>
+	<script type="text/javascript">
+		//setTimeout executa a ação apenas uma vez
+		//setTimeout(function(){document.write('Teste')}, 2000)
+		//setIterval executa a ação mais de uma vez até que ela seja finalizada
+		var i = 5
+		var x = setInterval(function(){
+			document.write(i + '<br>') 
+			i-- 
+			if(i === 0){
+			//window.location.reload()
+				clearInterval(x)
+			}
+		}, 1000)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
