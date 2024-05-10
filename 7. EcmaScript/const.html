@@ -1,0 +1,19 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Const</title>
+	<script type="text/javascript">
+		const SERIE = 'Friends'
+		function x(){
+			const SERIE = 'TWD'
+			console.log('Escopo de função: ' + SERIE)
+		}
+		x()
+		console.log('Escopo global: ' + SERIE)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
