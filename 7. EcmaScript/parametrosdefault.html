@@ -1,0 +1,16 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Parâmetros Default</title>
+	<script type="text/javascript">
+		function contarUmaHistoria(personagem = 'Fubá', atividade = 'correr no parque', nome_dono = 'João'){
+			document.write(`Era uma vez, um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nome_dono} e ele viveram felizes para sempre`)
+		}
+		contarUmaHistoria(undefined, 'enterrar ossos', 'Pedro')
+		//Esses parâmetros defaul(padrão) são passados para que em casos de alguma informação não ser carregada, eles assumirem o lugar desta.
+	</script>
+</head>
+<body>
+
+</body>
+</html>
