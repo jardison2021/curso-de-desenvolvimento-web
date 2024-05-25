@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>OO - Pilar da abstração: reflexão</title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/javascript">
+		/*um software de marcenaria
+		//cadeira e sofá
+
+		//paradigma procedural
+		//cadeira
+		let qtdPernas = 4
+		let giratoria = false
+		let cor = 'azul'
+
+		//array de cadeiras
+
+		let cadeiras = Array()
+
+		cadeiras[0] = Array()
+		cadeiras[0]['qtdPernas'] = 4
+		cadeiras[0]['giratoria'] = false
+		cadeiras[0]['cor'] = 'azul'
+
+		cadeiras[1] = Array()
+		cadeiras[1]['qtdPernas'] = 1
+		cadeiras[1]['giratoria'] = true
+		cadeiras[1]['cor'] = 'vermelho'
+
+		function girar_cadeira(indice){
+			if(cadeiras[indice]['giratoria'] === true){
+				console.log('Cadeira giratória')
+			}else {
+				console.log('Cadeira fixa')
+			}
+		}
+		//forma de adicioanr um novo dado a um array no paradigma procedural
+		function adicionar_cadeira(qtde_pernas, giratoria,cor){
+			let cadeira = Array()
+			cadeira['qtd_pernas'] = qtde_pernas
+			cadeira['giratoria'] = giratoria
+			cadeira['cor'] = cor
+
+			cadeiras.push(cadeira)
+		}
+		adicionar_cadeira(3, false, 'verde')
+		console.log(cadeiras)
+		//girar_cadeira(cadeiras)*/
+
+		//Paradigma de OO
+		class Cadeira{
+			constructor(qtde_pernas, giratoria, cor){
+				this.qtde_pernas = qtde_pernas
+				this.giratoria = giratoria
+				this.cor = cor
+			}
+			girarCadeira(){
+				if(this.giratoria === true){
+					console.log('Cadeira giratória')
+				}else{
+					console.log('Cadeira fixa')
+				}
+			}
+		}
+		//Adicionar cadeira não faz parte do objeto, pois é uma operação de criação do objeto, então ele é uma instância de um novo objeto baseado na classe. Além disso, a instância de cadeira recebe o valores que serão setados pelo método constructor.
+		
+		let cadeira2 = new Cadeira(2, true, 'verde')
+
+		let cadeiras = Array()
+		cadeiras.push(new Cadeira(4, false, 'azul'))
+		cadeiras.push(new Cadeira(2, true, 'verde'))
+		console.log(cadeiras)
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
