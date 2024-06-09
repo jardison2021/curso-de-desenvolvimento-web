@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objeto Literal - Único</title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+		let assinatura = {
+			idCliente: 1000,
+			descricao: 'Acesso a internet',
+			status(){
+				console.log('Ativo')
+			}
+		}
+		console.log(assinatura.descricao)
+		let y = assinatura
+		console.log(y.descricao)
+		//modificando a descrição através do objeto y
+		y.descricao = 'internet, tv e telefone'
+		console.log(assinatura.descricao, y.descricao)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
