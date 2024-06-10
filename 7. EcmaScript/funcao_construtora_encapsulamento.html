@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Função construtra - Encapsulamento</title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+		let Carro = function(){
+			this.cor = 'Amarelo'
+			this.modelo = 'Chevette'
+			this.velocidadeAtual = 0
+			this.velocidadeMaxima = 180
+			//Os métodos dentro de funções construtoras são definidos a partir do operador this.
+			this.acelerar = function(){
+				let velocidade = this.getVelocidadeAtual() + 50
+				if(velocidade > this.velocidadeMaxima){
+					velocidade = this.velocidadeMaxima
+				}
+				this.setVelocidadeAtual(velocidade)
+			}
+			this.getVelocidadeAtual = function(){
+				return this.velocidadeAtual
+			}
+			this.setVelocidadeAtual = function(velocidadeAtual){
+				this.velocidadeAtual = velocidadeAtual
+			}
+		}
+		let carro = new Carro()
+		console.log(carro.velocidadeAtual)
+		carro.acelerar()
+		console.log(carro.velocidadeAtual)
+		carro.acelerar()
+		console.log(carro.velocidadeAtual)
+		carro.acelerar()
+		console.log(carro.velocidadeAtual)
+		carro.acelerar()
+		console.log(carro.velocidadeAtual)
+		carro.acelerar()
+		console.log(carro.velocidadeAtual)
+		carro.acelerar()
+		console.log(carro.velocidadeAtual)
+		//novo objeto privando o atributo velocidadeMaxima
+		let Carro2 = function(){
+			//uma forma de encapsular um atributo é criando uma variável no contexto da função.
+			var velocidadeMaxima = 180
+			var quilometrosRodados = 0
+			this.cor = 'Amarelo'
+			this.modelo = 'Chevette'
+			this.velocidadeAtual = 0
+			//Os métodos dentro de funções construtoras são definidos a partir do operador this.
+			this.acelerar = function(){
+				let velocidade = this.getVelocidadeAtual() + 50
+				if(velocidade > velocidadeMaxima){
+					velocidade = velocidadeMaxima
+				}
+				this.setVelocidadeAtual(velocidade)
+				setQuilometrosRodados(0.07)
+				console.log(quilometrosRodados)
+			}
+			this.getVelocidadeAtual = function(){
+				return this.velocidadeAtual
+			}
+			this.setVelocidadeAtual = function(velocidadeAtual){
+				this.velocidadeAtual = velocidadeAtual
+			}
+			var setQuilometrosRodados = function(q){
+				quilometrosRodados += 0.05
+			}
+		}
+		let carro2 = new Carro2()
+		console.log(carro2.velocidadeAtual)
+		carro2.acelerar()
+		console.log(carro2.velocidadeAtual)
+		carro2.acelerar()
+		console.log(carro2.velocidadeAtual)
+		carro2.acelerar()
+		console.log(carro2.velocidadeAtual)
+		carro2.acelerar()
+		console.log(carro2.velocidadeAtual)
+		carro2.acelerar()
+		console.log(carro2.velocidadeAtual)
+		carro2.acelerar()
+		console.log(carro2.velocidadeAtual)
+		console.log(carro, carro2)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
