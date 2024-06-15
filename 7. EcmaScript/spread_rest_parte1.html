@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spread - Rest - parte 1</title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+		//contexto spread
+		//string
+		let tituloArtigo = 'Como utilizar o operador rest/spead'
+		console.log(tituloArtigo)
+		console.log(...tituloArtigo)
+		console.log([...tituloArtigo])
+
+		//arrays
+		let listaCursos1 = ['NodeJs e MongoDB', 'ES6, TypeScript e Agular 4']
+		let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução a GNU/Linux']
+		let listaCusosCompleto = ['Web Completo', 'Android Completo', ...listaCursos1, ...listaCursos2]
+
+		console.log(listaCusosCompleto)
+
+		//objetos
+		let pessoa = {nome: 'Jardison', idade: 29}
+		let clone = {endereço: 'Rua ABC', ...pessoa}
+
+		console.log(clone)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
