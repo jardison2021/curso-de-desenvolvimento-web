@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Destructuring</title>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<script type="text/babel">
+		//Destructuring: operador de desestruturação
+		let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+		//let [a, b, , c] = frutas //para pular um índice basta declara-lo vazio
+		let [a, b = 'Abacate', c, d, e = 'Banana'] = frutas
+		console.log(a, b, c, d, e)
+
+		let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['João', 'Maria']]
+		let [, [, m]] = coisas
+		let[[, ,p],] = coisas
+		console.log(m, p)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
