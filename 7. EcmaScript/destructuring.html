@@ -6,17 +6,35 @@
 	<title>Destructuring</title>
 	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script type="text/babel">
+		//Destructuring - Parte 1
 		//Destructuring: operador de desestruturação
 		let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
 		//let [a, b, , c] = frutas //para pular um índice basta declara-lo vazio
 		let [a, b = 'Abacate', c, d, e = 'Banana'] = frutas
 		console.log(a, b, c, d, e)
-
 		let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['João', 'Maria']]
 		let [, [, m]] = coisas
 		let[[, ,p],] = coisas
 		console.log(m, p)
-	</script>
+		//Destructuring - Parte 2
+		let produto = {
+			descricao: 'Notebook',
+			preco: 1800,
+			detalhes: {
+				fabricante: 'abc',
+				modelo: 'xyz'
+			}
+		}
+		//Composição
+		//Quando o objeto é criado a partir de um objeto literal, nós temos um objeto "é um".
+		//Quando existe atribuição de objeto sendo o valor de outro objeto, nós temos um objeto "tem um", como é o caso acima, onde nós temos o objeto detalhes.
+		//O token do destructuring varia de acordo com que ele está sendo trabalhado, sendo assim, se nós estivermos utilizando arrays, nós usaremos os []; já quando estamos trabalhando com objetos, utilizaremos {}.
+		//let {descricao, preco} = produto
+		//let {descricao: des, preco: pre, desconto = 5} = produto
+		let {detalhes: {fabricante, modelo}} = produto
+		//console.log(des, pre, desconto)
+		console.log(fabricante, modelo)
+	</script> 
 </head>
 <body>
 
