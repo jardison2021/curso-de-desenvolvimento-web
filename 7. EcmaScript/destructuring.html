@@ -34,6 +34,28 @@
 		let {detalhes: {fabricante, modelo}} = produto
 		//console.log(des, pre, desconto)
 		console.log(fabricante, modelo)
+
+		//parte 3
+		//função/array
+
+		let arr = [10, 20, 30, 40]
+
+		function teste([a, b, ,c, d = 100]){
+			console.log(a, b, c, d)
+		}
+		teste(arr)
+
+		//objeto
+		let obj ={
+			a: 10,
+			b: 20,
+			c: 30,
+			d: 40
+		}
+		function teste2({a: x, d, z = 10}){//Aqui a variável está sendo substituida por x para evitar confusão de nomes parecidos.
+			console.log(x, d, z)
+		}
+		teste2(obj)
 	</script> 
 </head>
 <body>
