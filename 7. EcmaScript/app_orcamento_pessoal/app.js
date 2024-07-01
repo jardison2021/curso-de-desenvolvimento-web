@@ -7,6 +7,15 @@ class Despesa{
 		this.descricao = descricao
 		this.valor = valor
 	}
+	//Método para validação dos dados
+	validarDados(){
+		for(let i in this){
+			if(this[i] == undefined || this[i] == '' || this[i] == null){
+				return false
+			}
+		}
+		return true
+	}
 }
 //Classe do objeto BD
 class Bd{
@@ -37,5 +46,11 @@ function cadastrarDespesa(){
 	let descricao = document.getElementById('descricao')
 	let valor = document.getElementById('valor')
 	let despesa = new Despesa(ano.value, mes.value, dia.value, descricao.value, valor.value)
-	bd.gravar(despesa)
+	//Condição e chamada da validação dos dados
+	if(despesa.validarDados()){
+		//bd.gravar(despesa)
+		console.log('Dados válidos')
+	}else{
+		console.log('Dados inválidos')
+	}
 }
