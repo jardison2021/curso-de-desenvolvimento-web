@@ -48,9 +48,9 @@ function cadastrarDespesa(){
 	let despesa = new Despesa(ano.value, mes.value, dia.value, descricao.value, valor.value)
 	//Condição e chamada da validação dos dados
 	if(despesa.validarDados()){
-		//bd.gravar(despesa)
-		console.log('Dados válidos')
+		bd.gravar(despesa)
+		$('sucessogravacao').modal('show')
 	}else{
-		console.log('Dados inválidos')
+		$('errogravacao').modal('show')
 	}
 }
